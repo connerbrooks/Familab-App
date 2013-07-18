@@ -8,7 +8,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.NavUtils;
 import android.support.v4.app.TaskStackBuilder;
 import android.view.MenuItem;
@@ -39,7 +38,7 @@ import java.util.Map;
 /**
  * Created by conner on 6/30/13.
  */
-public class AreaActivity extends Fragment {
+public class AreaActivity extends Activity{
 
 
     private static final String TAG_NAME = "name";
@@ -82,24 +81,24 @@ public class AreaActivity extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         JSONArray jArray;
         super.onCreate(savedInstanceState);
-        final ActionBar actionBar = getActivity().getActionBar();
+        final ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        getActivity().setContentView(R.layout.activity_area_trans);
+        setContentView(R.layout.activity_area_trans);
 
 
-        mActionBarBackgroundDrawable = getResources().getDrawable(android.R.color.background_dark);
+        mActionBarBackgroundDrawable = getResources().getDrawable(android.R.color.holo_blue_bright);
         mActionBarBackgroundDrawable.setAlpha(0);
 
-        getActivity().getActionBar().setBackgroundDrawable(mActionBarBackgroundDrawable);
+        getActionBar().setBackgroundDrawable(mActionBarBackgroundDrawable);
 
-        ((NotifyingScrollView) getActivity().findViewById(R.id.scroll_view)).setOnScrollChangedListener(mOnScrollChangedListener);
+        ((NotifyingScrollView) findViewById(R.id.scroll_view)).setOnScrollChangedListener(mOnScrollChangedListener);
 
 
-        Intent intent = getActivity().getIntent();
+        Intent intent = getIntent();
         int position = intent.getIntExtra(UniqueItemListFragment.EXTRA_POSITION, 0);
         //get json object from intent
         try{
-            jArray = new JSONArray(getActivity().getIntent().getStringExtra("json"));
+            jArray = new JSONArray(getIntent().getStringExtra("json"));
             JSONArray items = jArray;
 
             name = items.getJSONObject(position).getString(TAG_NAME);
@@ -140,12 +139,12 @@ public class AreaActivity extends Fragment {
 
         }
 
-        actionBar.setTitle(name);
+        getActionBar().setTitle(name);
 
 
 
 
-        WebView webView = (WebView) getActivity().findViewById(R.id.image_header);
+        WebView webView = (WebView) findViewById(R.id.image_header);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
 
@@ -196,7 +195,7 @@ public class AreaActivity extends Fragment {
 
 
         mAdapter = new SimpleExpandableListAdapter(
-                getActivity(),
+                this,
                 groupData,
                 android.R.layout.simple_expandable_list_item_1,
                 new String[] { "Name", IS_EVEN },
@@ -206,14 +205,14 @@ public class AreaActivity extends Fragment {
                 new String[] { "Name", IS_EVEN },
                 new int[] { android.R.id.text1, android.R.id.text2 }
         );
-        ExpandableListView lv = (ExpandableListView)getActivity().findViewById(R.id.listView);
+        ExpandableListView lv = (ExpandableListView)findViewById(R.id.listView);
         lv.setAdapter(mAdapter);
 
     }
 
     private NotifyingScrollView.OnScrollChangedListener mOnScrollChangedListener = new NotifyingScrollView.OnScrollChangedListener() {
         public void onScrollChanged(ScrollView who, int l, int t, int oldl, int oldt) {
-            final int headerHeight = getActivity().findViewById(R.id.image_header).getHeight() - getActivity().getActionBar().getHeight();
+            final int headerHeight = findViewById(R.id.image_header).getHeight() - getActionBar().getHeight();
             final float ratio = (float) Math.min(Math.max(t, 0), headerHeight) / headerHeight;
             final int newAlpha = (int) (ratio * 255);
             mActionBarBackgroundDrawable.setAlpha(newAlpha);
@@ -227,11 +226,11 @@ public class AreaActivity extends Fragment {
                 // This is called when the Home (Up) button is pressed in the action bar.
                 // Create a simple intent that starts the hierarchical parent activity and
                 // use NavUtils in the Support Package to ensure proper handling of Up.
-                Intent upIntent =  NavUtils.getParentActivityIntent(getActivity());
-                if (NavUtils.shouldUpRecreateTask(getActivity(), upIntent)) {
+                Intent upIntent =  NavUtils.getParentActivityIntent(this);
+                if (NavUtils.shouldUpRecreateTask(this, upIntent)) {
                     // This activity is not part of the application's task, so create a new task
                     // with a synthesized back stack.
-                    TaskStackBuilder.create(getActivity())
+                    TaskStackBuilder.create(this)
                             // If there are ancestor activities, they should be added here.
                             .addNextIntentWithParentStack(upIntent)
                             .startActivities();
@@ -239,7 +238,7 @@ public class AreaActivity extends Fragment {
                 } else {
                     // This activity is part of the application's task, so simply
                     // navigate up to the hierarchical parent activity.
-                    NavUtils.navigateUpTo(getActivity(), upIntent);
+                    NavUtils.navigateUpTo(this, upIntent);
                 }
                 return true;
         }
