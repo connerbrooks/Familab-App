@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res" >
+            <file
+                name="ic_launcher"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="activity_main"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-sw600dp/dimens.xml"
+                qualifiers="sw600dp" />
+            <file
+                name="ic_launcher"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style name="Widget.ActionBar.Transparent" >
+                    <item name="android:background">
+@android:color/transparent
+                    </item>
+                </style>
+
+                <style
+                    name="Widget.ActionBar"
+                    parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse" >
+                    <item name="android:background">
+@android:color/holo_blue_bright
+                    </item>
+                </style>
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/themes.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="title_activity_test_item_view" >TestItemView
+                </string>
+                <string name="title_activity_area_status_list_fragment" >AreaStatusListFragment
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="title_activity_area" >AreaActivity
+                </string>
+                <string name="action_websearch" >Web search
+                </string>
+
+                <string-array name="selection_array" >
+                    <item>
+Connect
+                    </item>
+                    <item>
+Events
+                    </item>
+                    <item>
+Areas
+                    </item>
+                    <item>
+updates
+                    </item>
+                    <item>
+Lab Panorama
+                    </item>
+                    <item>
+Suggestions‽
+                    </item>
+                    <item>
+Item JSON Test
+                    </item>
+                    <item>
+Areas JSON Text
+                    </item>
+                </string-array>
+
+                <string name="drawer_close" >Close navigation drawer
+                </string>
+                <string name="title_activity_jsonstatus_fragment" >JSONStatusFragment
+                </string>
+                <string name="title_activity_suggestions_fragment" >SuggestionsFragment
+                </string>
+
+                <string-array name="nav_classes" >
+                    <item>
+org.familab.app.ConnectFragment
+                    </item>
+                    <item>
+org.familab.app.EventsFragment
+                    </item>
+                    <item>
+org.familab.app.StatusFragment
+                    </item>
+                    <item>
+org.familab.app.RecentChanges
+                    </item>
+                    <item>
+org.familab.app.FamiDuinoFragment
+                    </item>
+                    <item>
+org.familab.app.SuggestionsFragment
+                    </item>
+                    <item>
+org.familab.app.UniqueItemListFragment
+                    </item>
+                    <item>
+org.familab.app.AreaStatusListFragment
+                    </item>
+                </string-array>
+
+                <string name="title_activity_recent_changes" >RecentChanges
+                </string>
+                <string name="app_name" >FamiLAB
+                </string>
+                <string name="title_activity_item_activtity" >ItemActivity
+                </string>
+                <string name="title_activity_web" >FamiLab
+                </string>
+                <string name="drawer_open" >Open navigation drawer
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="title_activity_unique_item" >Unique Item
+                </string>
+                <string name="app_not_available" >Sorry, there\'s no web browser available
+                </string>
+            </file>
+            <file
+                name="ic_launcher"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                name="main"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="item_activtity"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/item_activtity.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="fragment_planet"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/fragment_planet.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="changes_recent"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/changes_recent.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_location"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_location.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="activity_web_view"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_web_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_forums"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_forums.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_logo"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_logo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="web"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/web.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_area_trans"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_area_trans.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_logo"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_logo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_irc"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_irc.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_menu_refresh"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_menu_refresh.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="calendar_section"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/calendar_section.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="unique_item"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/unique_item.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="drawer_list_item"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/drawer_list_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_share"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_share.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_irc"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_irc.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="jsonstatus"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/jsonstatus.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_g_plus"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_g_plus.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="fragment_section_dummy"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/fragment_section_dummy.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_drawer"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_drawer.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_location"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_location.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_forums"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_forums.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_drawer.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="action_search"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/action_search.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_share"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_share.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="testpicture"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/testpicture.jpg"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_g_plus"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_g_plus.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="recent_changes"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/recent_changes.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_g_plus"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_g_plus.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_logo"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_logo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="test_item_view"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/test_item_view.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_menu_qr_code"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_menu_qr_code.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="area_status_list"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/area_status_list.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_twitter"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_twitter.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_menu_back"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_menu_back.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="fragment_list_status_area"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/fragment_list_status_area.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_item"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="drawer_shadow"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_menu_refresh"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_menu_refresh.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="fragment_status_json"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/fragment_status_json.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="drawer_shadow"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/drawer_shadow.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_menu_qr_code"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_menu_qr_code.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_drawer.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="status_page"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/status_page.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="drawer_shadow"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/drawer_shadow.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="fragment_suggestion"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/fragment_suggestion.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="icon_list"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/icon_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_forums"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_forums.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_irc"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_irc.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="activity_drawer_layout_test"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_drawer_layout_test.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_unique"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/item_unique.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="status"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/status.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_menu_back"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_menu_back.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_twitter"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_twitter.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="settings"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/settings.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_menu_refresh"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_menu_refresh.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="famiduino"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/famiduino.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="action_search"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/action_search.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="suggestions"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/suggestions.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_menu_qr_code"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-hdpi/ic_menu_qr_code.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_twitter"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_twitter.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="twitter_page"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/twitter_page.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="action_search"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/action_search.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/themes.xml"
+                qualifiers="" >
+
+                <style
+                    name="Theme.TranslucentActionBar"
+                    parent="@android:style/Theme.Holo.Light.DarkActionBar" >
+                    <item name="android:actionBarStyle">
+@style/Widget.ActionBar
+                    </item>
+                </style>
+
+                <style name="Theme.TranslucentActionBar.ActionBar" />
+
+                <style name="Theme.TranslucentActionBar.ActionBar.Overlay" >
+                    <item name="android:actionBarStyle">
+@style/Widget.ActionBar.Transparent
+                    </item>
+                    <item name="android:windowActionBarOverlay">
+true
+                    </item>
+                </style>
+            </file>
+            <file
+                name="activity_area"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_area.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_share"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_share.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_menu_back"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-xhdpi/ic_menu_back.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_location"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/drawable-mdpi/ic_location.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="area"
+                path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/area.xml"
+                qualifiers=""
+                type="menu" />
+        </source>
+        <source path="/home/conner/git/FamiLABAppProject/FamiLABApp/build/res/rs/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/conner/git/FamiLABAppProject/FamiLABApp/src/debug/res" />
+    </dataSet>
+
+</merger>
