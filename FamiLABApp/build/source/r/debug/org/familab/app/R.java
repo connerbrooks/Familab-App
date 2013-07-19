@@ -9,7 +9,7 @@ package org.familab.app;
 
 public final class R {
     public static final class array {
-        /**  From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml 
+        /**  From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml 
          */
         public static final int nav_classes=0x7f040000;
         public static final int selection_array=0x7f040001;
@@ -17,8 +17,8 @@ public final class R {
     public static final class attr {
     }
     public static final class dimen {
-        /**  From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/dimens.xml 
- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-sw720dp-land/dimens.xml 
+        /**  From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/dimens.xml 
+ From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-sw720dp-land/dimens.xml 
          */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
@@ -98,7 +98,7 @@ public final class R {
         public static final int web=0x7f08000b;
     }
     public static final class string {
-        /**  From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml 
+        /**  From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml 
          */
         public static final int action_settings=0x7f060000;
         public static final int action_websearch=0x7f060001;
@@ -118,27 +118,27 @@ public final class R {
         public static final int title_activity_web=0x7f06000f;
     }
     public static final class style {
-        /**  From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml 
+        /**  From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml 
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/themes.xml, while customizations related to
             backward-compatibility can go here.
         
- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-v11/styles.xml 
+ From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-v11/styles.xml 
  API 11 theme customizations can go here. 
- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-v14/styles.xml 
+ From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values-v14/styles.xml 
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
-        /**  From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/themes.xml 
+        /**  From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/themes.xml 
          */
         public static final int Theme_TranslucentActionBar=0x7f070002;
         public static final int Theme_TranslucentActionBar_ActionBar=0x7f070003;
         public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f070004;
-        /**  From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml 
+        /**  From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml 
          */
         public static final int Widget_ActionBar=0x7f070005;
         public static final int Widget_ActionBar_Transparent=0x7f070006;

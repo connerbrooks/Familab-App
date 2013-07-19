@@ -48,7 +48,6 @@ public class AreaStatusListFragment extends ListFragment {
     }
 
     public void getItemList() throws JSONException {
-        Log.v("jesus chirst", "omagrafds");
         FamiRestClient.get("areas.json", null, new JsonHttpResponseHandler() {
 
             @Override
@@ -70,15 +69,9 @@ public class AreaStatusListFragment extends ListFragment {
 
 
                     }
-
-
-
                 }catch(JSONException e){
                 }
 
-                Log.v("fuck me omg", "dammmit");
-
-                //Log.v("output:  ", tweetText);
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
                         android.R.layout.simple_list_item_1, names);
                 setListAdapter(adapter);

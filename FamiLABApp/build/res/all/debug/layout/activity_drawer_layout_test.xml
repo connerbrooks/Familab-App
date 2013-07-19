@@ -20,4 +20,4 @@
         android:divider="@android:color/holo_blue_bright"
         android:dividerHeight="1dp" />
 
-</android.support.v4.widget.DrawerLayout><!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_drawer_layout_test.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_drawer_layout_test.xml -->

@@ -40,7 +40,6 @@ import java.util.Map;
  */
 public class AreaActivity extends Activity{
 
-    //awesome cool aweseom greadadt
     private static final String TAG_NAME = "name";
     private static final String TAG_PHOTO_URL = "photo_url";
     private static final String TAG_TICKETS = "tickets";
@@ -244,9 +243,5 @@ public class AreaActivity extends Activity{
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
 
 }

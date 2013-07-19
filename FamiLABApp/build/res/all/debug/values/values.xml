@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml -->
     <string-array name="nav_classes">
         <item>org.familab.app.ConnectFragment</item>
         <item>org.familab.app.EventsFragment</item>
@@ -22,10 +22,10 @@
         <item>Item JSON Test</item>
         <item>Areas JSON Text</item>
     </string-array>
-    <!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/dimens.xml -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/strings.xml -->
     <string name="action_settings">Settings</string>
     <string name="action_websearch">Web search</string>
     <string name="app_name">FamiLAB</string>
@@ -42,7 +42,7 @@
     <string name="title_activity_test_item_view">TestItemView</string>
     <string name="title_activity_unique_item">Unique Item</string>
     <string name="title_activity_web">FamiLab</string>
-    <!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
@@ -54,7 +54,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/themes.xml -->
+    <!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/themes.xml -->
     <style name="Theme.TranslucentActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
     </style>
@@ -65,7 +65,7 @@
         <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
         <item name="android:windowActionBarOverlay">true</item>
     </style>
-    <!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/values/styles.xml -->
     <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@android:color/holo_blue_bright</item>
     </style>

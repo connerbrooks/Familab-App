@@ -19,4 +19,4 @@
             android:showAsAction="ifRoom|withText"
             android:title="QR Code"/>
 
-</menu><!-- From: /home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/status.xml -->
+</menu><!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/status.xml -->
