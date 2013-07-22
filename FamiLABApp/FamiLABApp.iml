@@ -69,7 +69,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="support-v4-13.0.0" level="project" />
     <orderEntry type="library" name="android-async-http-1.4.3" level="project" />
-    <orderEntry type="library" name="android-support-v4" level="project" />
   </component>
 </module>
 

@@ -149,7 +149,6 @@ public class AreaActivity extends Activity{
 
             //webView.getSettings().setLoadWithOverviewMode(true);
            // webView.getSettings().setUseWideViewPort(true);
-        webView.setInitialScale(1);
 
          webView.loadUrl(photoString);
          //if(!photoString.equals("/photos/original/missing.png")){
@@ -243,5 +242,6 @@ public class AreaActivity extends Activity{
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 }

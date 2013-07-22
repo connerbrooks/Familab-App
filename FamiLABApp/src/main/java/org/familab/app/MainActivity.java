@@ -184,7 +184,7 @@ public class MainActivity extends FragmentActivity {
         // If the nav drawer is open, hide action items related to the content view
         boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
         //menu.findItem(R.id.action_settings).setVisible(true);
-        getSupportFragmentManager().findFragmentByTag(mCurCheckPosition).setMenuVisibility(drawerOpen);
+        //getSupportFragmentManager().findFragmentByTag(mCurCheckPosition).setMenuVisibility(drawerOpen);
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -250,7 +250,7 @@ public class MainActivity extends FragmentActivity {
 
     /**
      * Selects the item clicked in the list
-     * @param position
+     * @param position in nav drawer list
      */
     private void selectItem(int position) {
 
@@ -270,13 +270,6 @@ public class MainActivity extends FragmentActivity {
         mDrawerLayout.closeDrawer(mDrawerList);
 
     }
-    /*
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt("curChoice", currentPage);
-    }*/
-
 
     @Override
     public void setTitle(CharSequence title) {
