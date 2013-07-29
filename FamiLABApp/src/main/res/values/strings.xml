@@ -25,7 +25,6 @@
         <item>updates</item>
         <item>Lab Panorama</item>
         <item>Suggestions‽</item>
-        <item>Item JSON Test</item>
         <item>Areas JSON Text</item>
     </string-array>
     <string-array name="nav_classes">
@@ -35,7 +34,6 @@
         <item>org.familab.app.RecentChanges</item>
         <item>org.familab.app.FamiDuinoFragment</item>
         <item>org.familab.app.SuggestionsFragment</item>
-        <item>org.familab.app.UniqueItemListFragment</item>
         <item>org.familab.app.AreaStatusListFragment</item>
     </string-array>
 

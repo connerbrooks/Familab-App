@@ -3,8 +3,6 @@ package org.familab.app;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,26 +12,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ExpandableListAdapter;
-import android.widget.ExpandableListView;
-import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.ScrollView;
-import android.widget.SimpleExpandableListAdapter;
-
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by conner on 6/30/13.
@@ -51,6 +38,8 @@ public class AreaActivity extends Activity{
     private static final String TAG_LOGGABLE = "loggable";
     private static final String TAG_TICKETABLE = "ticketable";
 
+    public final static String EXTRA_POSITION = "position";
+
     String name;
     String photoString;
     Uri photoUri;
@@ -59,6 +48,7 @@ public class AreaActivity extends Activity{
 
     JSONArray ticketJArray;
     JSONArray uniqueItemJArray;
+    JSONArray cacheArray;
     JSONObject uniqueItemJObject;
     JSONObject ticketJObject;
     String[] bodyArray;
@@ -86,6 +76,7 @@ public class AreaActivity extends Activity{
 
 
         mActionBarBackgroundDrawable = getResources().getDrawable(android.R.color.holo_blue_bright);
+
         mActionBarBackgroundDrawable.setAlpha(0);
 
         getActionBar().setBackgroundDrawable(mActionBarBackgroundDrawable);
@@ -99,6 +90,7 @@ public class AreaActivity extends Activity{
         try{
             jArray = new JSONArray(getIntent().getStringExtra("json"));
             JSONArray items = jArray;
+            cacheArray = items;
 
             name = items.getJSONObject(position).getString(TAG_NAME);
             photoString = items.getJSONObject(position).getString(TAG_PHOTO_URL);
@@ -159,7 +151,7 @@ public class AreaActivity extends Activity{
          //}
 
 
-
+/*
         List<Map<String, String>> groupData = new ArrayList<Map<String, String>>();
         List<List<Map<String, String>>> childData = new ArrayList<List<Map<String, String>>>();
 
@@ -205,8 +197,45 @@ public class AreaActivity extends Activity{
         );
         ExpandableListView lv = (ExpandableListView)findViewById(R.id.listView);
         lv.setAdapter(mAdapter);
+        */
+
+        ArrayAdapter<String> ticketAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, bodyArray);
+        ListView ticketList = (ListView) findViewById(R.id.ticketList);
+        ticketList.setAdapter(ticketAdapter);
+
+        ticketList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+            }
+        });
+
+
+
+        final ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, itemNameArray);
+        ListView itemList = (ListView) findViewById(R.id.itemList);
+        itemList.setAdapter(itemAdapter);
+        final Activity areaActThis = this;
+        itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Object o = itemAdapter.getItem(position);
+                String keyword = o.toString();
+
+                Intent intent = new Intent(areaActThis, ItemActivity.class);
+                intent.putExtra("json", cacheArray.toString());
+                intent.putExtra(EXTRA_POSITION, position);
+                startActivity(intent);
+            }
+        });
+
 
     }
+
 
     private NotifyingScrollView.OnScrollChangedListener mOnScrollChangedListener = new NotifyingScrollView.OnScrollChangedListener() {
         public void onScrollChanged(ScrollView who, int l, int t, int oldl, int oldt) {

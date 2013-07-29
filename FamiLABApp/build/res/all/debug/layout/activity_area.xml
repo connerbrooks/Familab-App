@@ -1,6 +1,6 @@
 
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,26 +8,81 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".AreaActivity">
+    tools:context=".AreaActivity"
+    android:orientation="horizontal">
 
 
+    <!--<ImageView
+                android:id="@+id/image_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/testpicture"/>-->
     <WebView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            android:id="@+id/image_header"/>
+
+
+    <!--
+            <ExpandableListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listView"
+                    />
+                    -->
+
+
+    <TextView
             android:layout_width="fill_parent"
-            android:layout_height="200dp"
-            android:id="@+id/webView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_blue_bright"
+            android:paddingLeft="20dp"
+            android:text="Tickets"
+            android:id="@+id/textView"/>
 
-    <ExpandableListView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/listView"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/webView"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_bright" />
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticketList"
+            android:isScrollContainer="false"
+            android:layout_weight="1"/>
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="Items"
+            android:id="@+id/textView"/>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_bright" />
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemList"
+            android:layout_weight="1"/>
 
 
 
 
-</RelativeLayout>
+
+</LinearLayout>
 <!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/activity_area.xml -->

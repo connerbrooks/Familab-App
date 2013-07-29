@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:fillViewport="true">
 
     <LinearLayout
@@ -23,11 +23,64 @@
 
                 android:id="@+id/image_header"/>
 
+
+<!--
         <ExpandableListView
                 android:layout_width="match_parent"
-                android:layout_height="900dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/listView"
                 />
+                -->
+
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/holo_blue_bright"
+                android:paddingLeft="20dp"
+                android:text="Tickets"
+                android:id="@+id/textView"/>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="2dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@android:color/holo_blue_bright" />
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ticketList"
+                android:isScrollContainer="false"
+                android:layout_weight="1"/>
+
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/holo_blue_bright"
+                android:paddingLeft="20dp"
+                android:text="Items"
+                android:id="@+id/textView"/>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_height="2dp"
+                android:background="@android:color/holo_blue_bright" />
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:id="@+id/itemList"
+                android:layout_weight="1"/>
+
 
     </LinearLayout>
 
