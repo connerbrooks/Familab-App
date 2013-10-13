@@ -1,4 +1,4 @@
-package org.familab.app;
+package org.familab.app.Fragments;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -15,20 +15,18 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import org.familab.app.IntentIntegrator;
+import org.familab.app.IntentResult;
+import org.familab.app.R;
+
 /**
  * Created by conner on 6/16/13.
  */
-public class StatusFragment extends Fragment {
+public class RecentChanges extends Fragment {
     public static WebView webView;
-
-
 
     private ValueCallback<Uri> mUploadMessage;
     private final static int FILECHOOSER_RESULTCODE = 1;
-    private Uri mCapturedImageURI = null;
-    private static final int CAMERA_REQUEST = 1888;
-    // private final static int
-
 
     WebViewClient MyWebViewClient = new WebViewClient()
     {
@@ -38,13 +36,8 @@ public class StatusFragment extends Fragment {
         {
             view.loadUrl(url);
             return true;
-
         }
-
     };
-
-
-
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -91,7 +84,7 @@ public class StatusFragment extends Fragment {
             ((WebView)rootView.findViewById(R.id.webView3)).restoreState(savedInstanceState);
         }
         else{
-            webView.loadUrl("http://famitracker.herokuapp.com/unique_items");
+            webView.loadUrl("http://famitracker.herokuapp.com/recent_changes");
         }
         setHasOptionsMenu(true);
 
@@ -109,12 +102,6 @@ public class StatusFragment extends Fragment {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            /*
-            case R.id.action_settings:
-                Intent intent = new Intent(getActivity(), Settings.class);
-                startActivity(intent);
-                return true;
-            */
             case R.id.menu_refresh:
                 webView.reload();
                 return true;
@@ -133,7 +120,6 @@ public class StatusFragment extends Fragment {
     }
 
 
-
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanResult != null) {
@@ -145,17 +131,7 @@ public class StatusFragment extends Fragment {
 
             webView.loadUrl(basedUrl);
         }
-
-        if(requestCode==FILECHOOSER_RESULTCODE){
-            if (null == mUploadMessage) return;
-            Uri result = intent == null || resultCode != MainActivity.RESULT_OK ? null
-                    : intent.getData();
-            mUploadMessage.onReceiveValue(result);
-            mUploadMessage = null;
-        }
         // else continue with any other code you need in the method
     }
-
-
 
 }

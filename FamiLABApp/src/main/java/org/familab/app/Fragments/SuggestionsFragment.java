@@ -1,4 +1,4 @@
-package org.familab.app;
+package org.familab.app.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+
+import org.familab.app.R;
 
 public class SuggestionsFragment extends Fragment {
     private WebView webView;

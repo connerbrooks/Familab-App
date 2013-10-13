@@ -1,4 +1,4 @@
-package org.familab.app;
+package org.familab.app.Fragments;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,6 +7,8 @@ import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import org.familab.app.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

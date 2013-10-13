@@ -1,4 +1,4 @@
-package org.familab.app;
+package org.familab.app.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.ListView;
 
 import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.familab.app.AreaActivity;
+import org.familab.app.FamiRestClient;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -51,25 +53,25 @@ public class AreaStatusListFragment extends ListFragment {
         FamiRestClient.get("areas.json", null, new JsonHttpResponseHandler() {
 
             @Override
-            public void onSuccess(JSONArray itemArray){
+            public void onSuccess(JSONArray itemArray) {
                 Log.v("yayz", "hopze drms");
 
                 String text = null;
 
-                try{
+                try {
                     cacheArray = itemArray;
 
-                   // JSONArray items = itemArray.getJSONObject();
+                    // JSONArray items = itemArray.getJSONObject();
                     names = new String[itemArray.length()];
                     fuid = new String[itemArray.length()];
-                    for(int i = 0; i < itemArray.length(); i++){
+                    for (int i = 0; i < itemArray.length(); i++) {
                         names[i] = itemArray.getJSONObject(i).getString(TAG_NAME);
                         //fuid[i] = itemArray.getJSONObject(i).getString(TAG_FUID);
                         //  areaId[i] = items.getJSONObject(i).getString(TAG_AREA_ID);
 
 
                     }
-                }catch(JSONException e){
+                } catch (JSONException e) {
                 }
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),

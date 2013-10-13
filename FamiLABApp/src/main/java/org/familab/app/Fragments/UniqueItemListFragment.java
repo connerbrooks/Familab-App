@@ -1,4 +1,4 @@
-package org.familab.app;
+package org.familab.app.Fragments;
 
 import android.R;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.widget.ListView;
 
 import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.familab.app.FamiRestClient;
+import org.familab.app.UniqueItem;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -52,35 +54,34 @@ public class UniqueItemListFragment extends ListFragment {
         FamiRestClient.get("unique_items.json", null, new JsonHttpResponseHandler() {
 
             @Override
-            public void onSuccess(JSONObject itemObject){
+            public void onSuccess(JSONObject itemObject) {
                 Log.v("yayz", "hopze drms");
 
                 String text = null;
 
-                try{
+                try {
                     cacheObject = itemObject;
 
                     JSONArray items = itemObject.getJSONArray("unique_items");
                     names = new String[items.length()];
                     fuid = new String[items.length()];
-                    for(int i = 0; i < items.length(); i++){
+                    for (int i = 0; i < items.length(); i++) {
                         names[i] = items.getJSONObject(i).getString(TAG_NAME);
                         fuid[i] = items.getJSONObject(i).getString(TAG_FUID);
-                      //  areaId[i] = items.getJSONObject(i).getString(TAG_AREA_ID);
+                        //  areaId[i] = items.getJSONObject(i).getString(TAG_AREA_ID);
 
 
                     }
 
 
-
-                }catch(JSONException e){
+                } catch (JSONException e) {
                 }
 
                 Log.v("fuck me omg", "dammmit");
 
                 //Log.v("output:  ", tweetText);
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
-                            R.layout.simple_list_item_1, names);
+                        R.layout.simple_list_item_1, names);
                 setListAdapter(adapter);
 
 
