@@ -105,11 +105,11 @@ public class RecentChanges extends Fragment {
             case R.id.menu_refresh:
                 webView.reload();
                 return true;
-
+            /*
             case R.id.menu_back:
                 webView.goBack();
                 return true;
-
+            */
             case R.id.menu_QR:
                 IntentIntegrator integrator = new IntentIntegrator(this);
                 integrator.initiateScan();

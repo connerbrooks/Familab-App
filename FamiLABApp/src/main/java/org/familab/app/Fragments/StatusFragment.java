@@ -48,13 +48,9 @@ public class StatusFragment extends Fragment {
 
     };
 
-
-
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.status_page, container, false);
-
         webView = (WebView) rootView.findViewById(R.id.webView3);
         webView.setWebViewClient(MyWebViewClient);
         webView.setWebChromeClient(new WebChromeClient(){
@@ -123,11 +119,11 @@ public class StatusFragment extends Fragment {
             case R.id.menu_refresh:
                 webView.reload();
                 return true;
-
+            /*
             case R.id.menu_back:
                 webView.goBack();
                 return true;
-
+            */
             case R.id.menu_QR:
                 IntentIntegrator integrator = new IntentIntegrator(this);
                 integrator.initiateScan();
@@ -143,7 +139,6 @@ public class StatusFragment extends Fragment {
         IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanResult != null) {
             // handle scan result
-            //url famitracker.herokuapp.com/unique_items/new?fuid=809430970974
             String basedUrl = "http://famitracker.herokuapp.com/unique_items/new?fuid=";
 
             basedUrl += scanResult.getContents();

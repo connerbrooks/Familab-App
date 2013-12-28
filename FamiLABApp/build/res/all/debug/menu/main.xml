@@ -14,12 +14,15 @@
   limitations under the License.
   -->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:familab="http://schemas.android.com/apk/res-auto">
 
+    <!--android:showAsAction="never"-->
     <item
             android:id="@+id/action_settings"
             android:orderInCategory="100"
-            android:showAsAction="never"
-            android:title="@string/action_settings"/>
+
+            android:title="@string/action_settings"
+            familab:showAsAction="never"/>
 
 </menu><!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/main.xml -->

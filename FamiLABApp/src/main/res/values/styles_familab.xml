@@ -19,7 +19,7 @@
 
 <resources>
 
-    <style name="Theme.Familab" parent="@style/Theme.AppCompat.Light">
+    <style name="Theme.Familab" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarItemBackground">@drawable/selectable_background_familab</item>
         <item name="popupMenuStyle">@style/PopupMenu.Familab</item>
         <item name="dropDownListViewStyle">@style/DropDownListView.Familab</item>
@@ -29,35 +29,42 @@
         <item name="actionModeBackground">@drawable/cab_background_top_familab</item>
         <item name="actionModeSplitBackground">@drawable/cab_background_bottom_familab</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Familab</item>
+        <item name="activatableItemBackground">@drawable/activatable_item_background</item>
 
-        
+                <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.Familab.Widget</item>
+
     </style>
 
-    <style name="ActionBar.Solid.Familab" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+    <style name="ActionBar.Solid.Familab" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="background">@drawable/ab_solid_familab</item>
         <item name="backgroundStacked">@drawable/ab_stacked_solid_familab</item>
         <item name="backgroundSplit">@drawable/ab_bottom_solid_familab</item>
         <item name="progressBarStyle">@style/ProgressBar.Familab</item>
+        <item name="android:icon">@drawable/ic_actionbar</item>
+        <item name="icon">@drawable/ic_actionbar</item>
+        <item name="android:logo">@drawable/ic_actionbar</item>
+        <item name="logo">@drawable/ic_actionbar</item>
     </style>
 
-    <style name="ActionBar.Transparent.Familab" parent="@style/Widget.AppCompat.Light.ActionBar">
+    <style name="ActionBar.Transparent.Familab" parent="@style/Widget.AppCompat.ActionBar">
         <item name="background">@drawable/ab_transparent_familab</item>
         <item name="progressBarStyle">@style/ProgressBar.Familab</item>
     </style>
 	
-    <style name="PopupMenu.Familab" parent="@style/Widget.AppCompat.Light.PopupMenu">	
+    <style name="PopupMenu.Familab" parent="@style/Widget.AppCompat.PopupMenu">	
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_familab</item>	
     </style>
 	
-    <style name="DropDownListView.Familab" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+    <style name="DropDownListView.Familab" parent="@style/Widget.AppCompat.ListView.DropDown">
         <item name="android:listSelector">@drawable/selectable_background_familab</item>
     </style>
 
-    <style name="ActionBarTabStyle.Familab" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+    <style name="ActionBarTabStyle.Familab" parent="@style/Widget.AppCompat.ActionBar.TabView">
         <item name="android:background">@drawable/tab_indicator_ab_familab</item>
     </style>
 	
-    <style name="DropDownNav.Familab" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+    <style name="DropDownNav.Familab" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
         <item name="android:background">@drawable/spinner_background_ab_familab</item>
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_familab</item>
         <item name="android:dropDownSelector">@drawable/selectable_background_familab</item>
@@ -67,7 +74,7 @@
         <item name="android:progressDrawable">@drawable/progress_horizontal_familab</item>
     </style>
     
-    <style name="ActionButton.CloseMode.Familab" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+    <style name="ActionButton.CloseMode.Familab" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
         <item name="android:background">@drawable/btn_cab_done_familab</item>
     </style>
     
@@ -75,6 +82,46 @@
     <style name="Theme.Familab.Widget" parent="@style/Theme.AppCompat">
         <item name="popupMenuStyle">@style/PopupMenu.Familab</item>
         <item name="dropDownListViewStyle">@style/DropDownListView.Familab</item>
+    </style>
+
+    <!-- stuff for calendar -->
+
+    <style name="ListItemContainerBase">
+        <item name="android:background">?activatableItemBackground</item>
+        <item name="android:minHeight">?android:listPreferredItemHeight</item>
+    </style>
+
+    <!-- List item text -->
+    <style name="ListItemTitle">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/body_text_1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="ListItemSubtitle">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/body_text_2</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="ItemDetailTitle">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:textColor">@color/pressed_familab</item>
+
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="ItemDetailSubtitle">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/body_text_2</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="LinkItem">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/pressed_navdrawer</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 
 </resources>

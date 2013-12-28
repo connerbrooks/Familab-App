@@ -1,17 +1,17 @@
 package org.familab.app;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBar;
 import android.support.v4.app.NavUtils;
 import android.support.v4.app.TaskStackBuilder;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 
-public class WebViewActivity extends FragmentActivity {
+public class WebViewActivity extends ActionBarActivity {
 
 	private WebView webView; 
 	
@@ -26,7 +26,7 @@ public class WebViewActivity extends FragmentActivity {
         // getSupportFragmentManager.
 
         // Set up action bar.
-        final ActionBar actionBar = getActionBar();
+        final ActionBar actionBar = getSupportActionBar();
         
         // Specify that the Home button should show an "Up" caret, indicating that touching the
         // button will take the user one step up in the application's hierarchy.

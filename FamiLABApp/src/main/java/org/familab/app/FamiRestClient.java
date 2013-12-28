@@ -6,7 +6,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
 public class FamiRestClient {
-    private static final String BASE_URL = "http://famitracker.herokuapp.com/";
+    private static final String BASE_URL = "http://familab.dyndns.org:1234/api/";
 
     final int DEFAULT_TIMEOUT = 20 * 1000;
 

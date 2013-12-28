@@ -1,6 +1,7 @@
 package org.familab.app.Fragments;
 
 import android.R;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -12,13 +13,15 @@ import android.widget.ListView;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.familab.app.FamiRestClient;
-import org.familab.app.UniqueItem;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 
 public class UniqueItemListFragment extends ListFragment {
+
+    OnUniqueItemSelectedListener mCallback;
+
 
     private static final String TAG_ID = "id";
     private static final String TAG_AREA_ID = "area_id";
@@ -88,26 +91,25 @@ public class UniqueItemListFragment extends ListFragment {
             }
         });
 
-}
+    }
+
+    // Container Activity must implement this interface
+    public interface OnUniqueItemSelectedListener {
+        public void onUniqueItemSelected(String p);
+    }
 
     @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
-        //get item that was clicked
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
 
-        Object o = this.getListAdapter().getItem(position);
-        String keyword = o.toString();
-
-        Intent intent = new Intent(this.getActivity(), UniqueItem.class);
-        intent.putExtra("json", cacheObject.toString());
-        //String name = names[position];
-        //String famid = fuid[position];
-        //intent.putExtra(EXTRA_NAME, name);
-        //intent.putExtra(EXTRA_FUID, famid);
-        intent.putExtra(EXTRA_POSITION, position);
-        startActivity(intent);
-
-
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mCallback = (OnUniqueItemSelectedListener) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnHeadlineSelectedListener");
+        }
     }
     
 }

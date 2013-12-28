@@ -18,10 +18,11 @@
     android:id="@android:id/text1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textAppearance="?android:attr/textAppearanceListItemSmall"
     android:gravity="center_vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:textColor="#fff"
-    android:background="?android:attr/activatedBackgroundIndicator"
-    android:minHeight="?android:attr/listPreferredItemHeightSmall"/><!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/drawer_list_item.xml -->
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:textSize="20dp"
+    android:textColor="#ff2a2a2a"
+    android:background="?activatableItemBackground"/><!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/layout/drawer_list_item.xml -->

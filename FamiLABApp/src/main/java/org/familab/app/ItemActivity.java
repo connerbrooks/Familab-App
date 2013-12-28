@@ -1,7 +1,8 @@
 package org.familab.app;
 
-import android.app.ActionBar;
-import android.app.Activity;
+
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -18,6 +19,7 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ListView;
 import android.widget.ScrollView;
 
+import org.familab.app.Fragments.UniqueItemListFragment;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,7 +27,7 @@ import org.json.JSONObject;
 /**
  * Created by conner on 6/30/13.
  */
-public class ItemActivity extends Activity{
+public class ItemActivity extends ActionBarActivity{
 
     private static final String TAG_NAME = "name";
     private static final String TAG_PHOTO_URL = "photo_url";
@@ -70,7 +72,7 @@ public class ItemActivity extends Activity{
     public void onCreate(Bundle savedInstanceState) {
         JSONArray jArray;
         super.onCreate(savedInstanceState);
-        final ActionBar actionBar = getActionBar();
+        final ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_area_trans);
 
@@ -79,7 +81,7 @@ public class ItemActivity extends Activity{
 
         mActionBarBackgroundDrawable.setAlpha(0);
 
-        getActionBar().setBackgroundDrawable(mActionBarBackgroundDrawable);
+        getSupportActionBar().setBackgroundDrawable(mActionBarBackgroundDrawable);
 
         ((NotifyingScrollView) findViewById(R.id.scroll_view)).setOnScrollChangedListener(mOnScrollChangedListener);
 
@@ -130,7 +132,7 @@ public class ItemActivity extends Activity{
 
         }
 
-        getActionBar().setTitle(name);
+        getSupportActionBar().setTitle(name);
 
 
 
@@ -165,7 +167,7 @@ public class ItemActivity extends Activity{
                 android.R.layout.simple_list_item_1, itemNameArray);
         ListView itemList = (ListView) findViewById(R.id.itemList);
         itemList.setAdapter(itemAdapter);
-        final Activity areaActThis = this;
+        final ActionBarActivity areaActThis = this;
         itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -186,7 +188,7 @@ public class ItemActivity extends Activity{
 
     private NotifyingScrollView.OnScrollChangedListener mOnScrollChangedListener = new NotifyingScrollView.OnScrollChangedListener() {
         public void onScrollChanged(ScrollView who, int l, int t, int oldl, int oldt) {
-            final int headerHeight = findViewById(R.id.image_header).getHeight() - getActionBar().getHeight();
+            final int headerHeight = findViewById(R.id.image_header).getHeight() - getSupportActionBar().getHeight();
             final float ratio = (float) Math.min(Math.max(t, 0), headerHeight) / headerHeight;
             final int newAlpha = (int) (ratio * 255);
             mActionBarBackgroundDrawable.setAlpha(newAlpha);

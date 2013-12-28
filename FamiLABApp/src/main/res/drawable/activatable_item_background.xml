@@ -15,10 +15,10 @@
   -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/btn_cab_done_pressed_ommf" android:state_pressed="true" />
-    <item android:drawable="@drawable/btn_cab_done_focused_ommf" android:state_focused="true" />
-    <item android:drawable="@drawable/btn_cab_done_pressed_ommf" android:state_checked="true" />
-    <item android:drawable="@drawable/btn_cab_done_pressed_ommf" android:state_selected="true" />
-    <item android:drawable="@color/pressed_ommf" android:state_activated="true" />
+    <item android:drawable="@drawable/btn_cab_done_pressed_navdrawer" android:state_pressed="true" />
+    <item android:drawable="@drawable/btn_cab_done_focused_navdrawer" android:state_focused="true" />
+    <item android:drawable="@drawable/btn_cab_done_pressed_navdrawer" android:state_checked="true" />
+    <item android:drawable="@drawable/btn_cab_done_pressed_navdrawer" android:state_selected="true" />
+    <item android:drawable="@color/pressed_navdrawer" android:state_activated="true" />
     <item android:drawable="@android:color/transparent" />
 </selector>

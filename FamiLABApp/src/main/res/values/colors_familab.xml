@@ -18,5 +18,11 @@
 -->
 
 <resources>
-    <color name="pressed_familab">#CC33B5E5</color>
+    <color name="pressed_familab">#CCF2F2F2</color>
+    <color name="pressed_navdrawer">#CC33B5E5</color>
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#77000000</color>
+    <color name="body_text_3">#33000000</color>
+    <color name="map_floorselect_inactive">#FF333333</color>
+    <color name="accent_1">#ff4d90fe</color>
 </resources>

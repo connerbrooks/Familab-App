@@ -19,7 +19,7 @@
 
 <resources>
 
-    <style name="Theme.Familab" parent="@style/Theme.AppCompat.Light">
+    <style name="Theme.Familab" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_familab</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Familab</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Familab</item>
@@ -29,18 +29,23 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_familab</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_familab</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Familab</item>
+        <item name="activatableItemBackground">@drawable/activatable_item_background</item>
         
-        
+                <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Familab.Widget</item>
+
     </style>
 
-    <style name="ActionBar.Solid.Familab" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="android:background">@drawable/ab_background_textured_familab</item>
+    <style name="ActionBar.Solid.Familab" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_familab</item>
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_familab</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_textured_familab</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_familab</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Familab</item>
+        <item name="android:icon">@drawable/ic_actionbar</item>
+        <item name="android:logo">@drawable/ic_actionbar</item>
     </style>
 
-    <style name="ActionBar.Transparent.Familab" parent="@style/Widget.AppCompat.Light.ActionBar">
+    <style name="ActionBar.Transparent.Familab" parent="@style/Widget.AppCompat.ActionBar">
         <item name="android:background">@drawable/ab_transparent_familab</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Familab</item>
     </style>

@@ -1,22 +1,25 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:familab="http://schemas.android.com/apk/res-auto">
 
     <item
             android:id="@+id/menu_refresh"
             android:orderInCategory="500"
             android:icon="@drawable/ic_menu_refresh"
-            android:showAsAction="ifRoom|withText"
+            familab:showAsAction="ifRoom"
             android:title="Refresh"/>
+    <!--
     <item
             android:id="@+id/menu_back"
             android:orderInCategory="300"
             android:icon="@drawable/ic_menu_back"
-            android:showAsAction="ifRoom|withText"
+            familab:showAsAction="ifRoom"
             android:title="Back"/>
+            -->
     <item
             android:id="@+id/menu_QR"
             android:orderInCategory="400"
             android:icon="@drawable/ic_menu_qr_code"
-            android:showAsAction="ifRoom|withText"
+            familab:showAsAction="ifRoom"
             android:title="QR Code"/>
 
 </menu><!-- From: file:/home/conner/git/FamiLABAppProject/FamiLABApp/src/main/res/menu/status.xml -->

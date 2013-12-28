@@ -23,18 +23,18 @@
         <item>Events</item>
         <item>Areas</item>
         <item>updates</item>
-        <item>Lab Panorama</item>
-        <item>Suggestions‽</item>
+       <!--<item>Suggestions</item>-->
         <item>Areas JSON Text</item>
     </string-array>
     <string-array name="nav_classes">
-        <item>org.familab.app.ConnectFragment</item>
-        <item>org.familab.app.EventsFragment</item>
-        <item>org.familab.app.StatusFragment</item>
-        <item>org.familab.app.RecentChanges</item>
-        <item>org.familab.app.FamiDuinoFragment</item>
-        <item>org.familab.app.SuggestionsFragment</item>
-        <item>org.familab.app.AreaStatusListFragment</item>
+        <item>org.familab.app.Fragments.ConnectFragment</item>
+        <item>org.familab.app.Fragments.EventsFragment</item>
+        <item>org.familab.app.Fragments.StatusFragment</item>
+        <item>org.familab.app.Fragments.RecentChanges</item>
+        <!--
+        <item>org.familab.app.Fragments.SuggestionsFragment</item>-->
+
+        <item>org.familab.app.Fragments.AreaStatusListFragment</item>
     </string-array>
 
     <string name="drawer_open">Open navigation drawer</string>
