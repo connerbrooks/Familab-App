@@ -183,8 +183,6 @@ public class MainActivity extends ActionBarActivity
         MenuItem settingsItem = menu.findItem(R.id.action_settings);
 
         return super.onCreateOptionsMenu(menu);
-
-
     }
 
     /* Called whenever we call invalidateOptionsMenu() */
@@ -222,11 +220,9 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-
         //turn on the Navigation Drawer image; this is called in the LowerLevelFragments
         mDrawerToggle.setDrawerIndicatorEnabled(true);
         //getSupportFragmentManager().popBackStack();
-
     }
 
 
@@ -237,7 +233,6 @@ public class MainActivity extends ActionBarActivity
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             selectItem(position);
         }
-
     }
 
     /**
@@ -246,7 +241,6 @@ public class MainActivity extends ActionBarActivity
      */
     private void selectItem(int position) {
         switch (position) {
-
             case 0:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_frame, new ConnectFragment()).addToBackStack(null)
@@ -277,31 +271,11 @@ public class MainActivity extends ActionBarActivity
                         .commit();
 
         }
-
         mCurCheckPosition = classes[position];
         mDrawerList.setItemChecked(position, true);
         setTitle(titles[position]);
         mDrawerLayout.closeDrawer(mDrawerList);
         mDrawerToggle.setDrawerIndicatorEnabled(true);
-
-        /*
-        FragmentManager fragmentManager = getSupportFragmentManager();
-
-        FragmentTransaction tx = fragmentManager.beginTransaction();
-        tx.replace(R.id.content_frame,
-                Fragment.instantiate(MainActivity.this, classes[position]), classes[position]);
-        tx.commit();
-
-        //currentPage = position;
-        mCurCheckPosition = classes[position];
-
-        // update selected item and title, then close the drawer
-        mDrawerList.setItemChecked(position, true);
-
-        setTitle(titles[position]);
-        mDrawerLayout.closeDrawer(mDrawerList);
-        */
-
     }
 
     public void onUniqueItemSelected(String item){
