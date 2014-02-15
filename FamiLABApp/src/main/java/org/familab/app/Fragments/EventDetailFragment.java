@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import org.familab.app.Models.Items;
+import org.familab.app.Models.Calendar.Items;
 import org.familab.app.R;
 
 import java.util.List;

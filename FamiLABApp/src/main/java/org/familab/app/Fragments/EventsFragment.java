@@ -19,8 +19,8 @@ import com.google.gson.Gson;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.familab.app.CalendarClient;
-import org.familab.app.Models.Calendar;
-import org.familab.app.Models.Items;
+import org.familab.app.Models.Calendar.Calendar;
+import org.familab.app.Models.Calendar.Items;
 import org.familab.app.R;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,9 +28,6 @@ import org.json.JSONObject;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
 import java.util.List;
 
 /**

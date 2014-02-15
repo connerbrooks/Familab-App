@@ -1,7 +1,6 @@
 package org.familab.app.Fragments;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.util.Log;
@@ -12,10 +11,9 @@ import android.widget.ListView;
 import com.google.gson.Gson;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
-import org.familab.app.AreaActivity;
 import org.familab.app.FamiRestClient;
-import org.familab.app.Models.Area;
-import org.familab.app.Models.Response;
+import org.familab.app.Models.Status.Area;
+import org.familab.app.Models.Status.Response;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
